@@ -249,6 +249,7 @@ span.accent:hover {
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 /* .features-icon {
@@ -353,7 +354,8 @@ span.accent:hover {
   align-items: center;
   color: #afb1b8;
 }
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
   color: var(--prim-bcg-color);
   background-color: var(--accent-color);
 }
@@ -384,30 +386,26 @@ span.accent:hover {
   justify-content: center;
 }
 
-.clients-list .item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-}
-
 .clients-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .clients-link {
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #afb1b8;
 }
 
-.clients-link:hover {
-  width: 170px;
-  height: 92px;
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
+  border-radius: 4px;
 }
 
 .clients-icons {
@@ -484,7 +482,8 @@ footer .logo {
   color: var(--prim-bcg-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: var(--accent-color);
 }
 .footer-soc-icons {
@@ -576,6 +575,10 @@ footer .logo {
 
 .flex-element:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.flex-element-link {
+  display: block;
 }
 
 .flex-element-link:hover,
